@@ -28,7 +28,7 @@ public class Menu {
                 switch (n){
             case (1) -> importData(arrays);
             case (2) -> printData(arrays);
-            case (3) -> findMax2(arrays);
+            case (3) -> System.out.println("Gia tri lon thu hai cua mang: "+findMax2(arrays));
             case (4) -> deleteOddNumber(arrays);
         }
         }   while(n!=5);
