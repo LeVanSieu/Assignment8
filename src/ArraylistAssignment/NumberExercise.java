@@ -37,40 +37,11 @@ public class NumberExercise {
             }
             }
         }
-
+        
         return Max2;
     }
     static void deleteOddNumber(ArrayList<Integer> arrays){
         arrays.removeAll(arrays);
     }
-    static void Menu(ArrayList<Integer> arrays){
-        Scanner nhap = new Scanner(System.in);
-         int n;
-        do{
-            System.out.println("1. Nhap mang ");
-            System.out.println("2. In ra mang ");
-            System.out.println("3. Tim gia tri lon thu 2 ");
-            System.out.println("4. Xoa mang");
-            System.out.println("5. Thoat Menu");
-            System.out.println("Nhap lua chon cua ban: ");
-                do {
-                    n=nhap.nextInt();
-            } while (1<n&&n>5);
-                switch (n){
-            case (1):
-                importData(arrays);
-                break;
-            case (2): 
-                printData(arrays);
-                break;
-            case (3):
-                findMax2(arrays);
-                break;
-            case (4):
-                deleteOddNumber(arrays);
-                break;
-        }
-        }   while(n!=5);
-}
 }
  
